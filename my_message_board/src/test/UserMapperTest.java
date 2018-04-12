@@ -26,6 +26,7 @@ public class UserMapperTest {
 		}
 	}
 	
+	
 	@Test
 	public void testLoginByUsernameAndPassword() {
 		User user = new User();
