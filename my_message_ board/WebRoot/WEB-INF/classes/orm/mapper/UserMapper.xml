@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="orm.mapper.UserMapper">
+	<!-- 注意username不能重复，改进 -->
+	<insert id="registerUser" parameterType="orm.po.User" >
+		insert into 
+		user(username,password)
+		value(#{username},#{password})
+	</insert>
+	
+	<select id="loginByUsernameAndPassword" 
+		parameterType="orm.po.User" resultType="int">
+		select count(*) from user 	
+		where username=#{username} and password=#{password}
+	</select>
+</mapper>
