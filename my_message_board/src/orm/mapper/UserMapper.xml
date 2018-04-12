@@ -9,8 +9,9 @@
 	</insert>
 	
 	<select id="loginByUsernameAndPassword" 
-		parameterType="orm.po.User" resultType="int">
-		select count(*) from user 	
+		parameterType="orm.po.User" resultType="orm.po.User">
+		select * from user 	
 		where username=#{username} and password=#{password}
+		limit 1
 	</select>
 </mapper>

@@ -17,5 +17,4 @@
 		<mapper resource="orm/mapper/UserMapper.xml"/>
 		<mapper resource="orm/mapper/MessageMapper.xml"/>
 	</mappers>
-
 </configuration>

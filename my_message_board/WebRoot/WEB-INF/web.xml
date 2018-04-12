@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>messagesServlet</servlet-name>
+    <servlet-class>servlet.MessagesListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>messagesServlet</servlet-name>
+    <url-pattern>/messagesServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addMessageServlet</servlet-name>
+    <servlet-class>servlet.AddMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addMessageServlet</servlet-name>
+    <url-pattern>/addMessage</url-pattern>
+  </servlet-mapping>
+</web-app>

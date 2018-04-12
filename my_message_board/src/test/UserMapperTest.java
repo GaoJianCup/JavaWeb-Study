@@ -30,8 +30,8 @@ public class UserMapperTest {
 	@Test
 	public void testLoginByUsernameAndPassword() {
 		User user = new User();
-		user.setUsername("gaojian");
-		user.setPassword("145");
+		user.setUsername("ergou");
+		user.setPassword("123456");
 		System.out.println(userMapper.loginByUsernameAndPassword(user));
 	}
 }

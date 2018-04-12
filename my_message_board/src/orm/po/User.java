@@ -7,9 +7,15 @@ public class User {
 
     private String password;
     
-    
+    public User() {	}
 
-    @Override
+    public User(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
+	@Override
 	public String toString() {
 		return username;
 	}
